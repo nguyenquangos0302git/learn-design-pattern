@@ -9,10 +9,8 @@ public class WoodenDuck extends Duck {
     public WoodenDuck() {}
 
     public WoodenDuck(EDuckType type,
-                      String name,
-                      IFlyBehaviour iFlyBehaviour,
-                      IQuackBehaviour iQuackBehaviour) {
-        super(type, name, iFlyBehaviour, iQuackBehaviour);
+                      String name) {
+        super(type, name);
     }
 
     @Override

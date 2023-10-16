@@ -9,10 +9,8 @@ public class RedHeadDuck extends Duck {
     public RedHeadDuck() {}
 
     public RedHeadDuck(EDuckType type,
-                       String name,
-                       IFlyBehaviour iFlyBehaviour,
-                       IQuackBehaviour iQuackBehaviour) {
-        super(type, name, iFlyBehaviour, iQuackBehaviour);
+                       String name) {
+        super(type, name);
     }
 
     @Override

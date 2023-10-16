@@ -9,10 +9,8 @@ public class MallardDuck extends Duck {
     public MallardDuck() {}
 
     public MallardDuck(EDuckType type,
-                       String name,
-                       IFlyBehaviour iFlyBehaviour,
-                       IQuackBehaviour iQuackBehaviour) {
-        super(type, name, iFlyBehaviour, iQuackBehaviour);
+                       String name) {
+        super(type, name);
     }
 
     @Override

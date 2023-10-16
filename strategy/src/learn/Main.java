@@ -7,10 +7,21 @@ import learn.model.*;
 public class Main {
 
     public static void main(String[] args) {
-        Duck mallard = new MallardDuck(EDuckType.MALLARD, "Mallard", new FlyWithWings(), new Quack());
-        Duck redhead = new RedHeadDuck(EDuckType.REDHEAD, "Redhead", new FlyWithWings(), new Quack());
-        Duck rubber = new RubberDuck(EDuckType.RUBBER, "Rubber", new FlyNoWay(), new Squeak());
-        Duck wooden = new WoodenDuck(EDuckType.WOODEN, "Wooden", new FlyNoWay(), new MuteQuack());
+        Duck mallard = new MallardDuck(EDuckType.MALLARD, "Mallard");
+        mallard.setiFlyBehaviour(new FlyWithWings());
+        mallard.setiQuackBehaviour(new Quack());
+
+        Duck redhead = new RedHeadDuck(EDuckType.REDHEAD, "Redhead");
+        redhead.setiFlyBehaviour(new FlyWithWings());
+        redhead.setiQuackBehaviour(new Quack());
+
+        Duck rubber = new RubberDuck(EDuckType.RUBBER, "Rubber");
+        rubber.setiFlyBehaviour(new FlyNoWay());
+        rubber.setiQuackBehaviour(new Squeak());
+
+        Duck wooden = new WoodenDuck(EDuckType.WOODEN, "Wooden");
+        wooden.setiFlyBehaviour(new FlyNoWay());
+        wooden.setiQuackBehaviour(new MuteQuack());
 
         show(mallard);
         show(redhead);

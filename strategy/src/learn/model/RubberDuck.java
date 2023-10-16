@@ -9,10 +9,8 @@ public class RubberDuck extends Duck {
     public RubberDuck() {}
 
     public RubberDuck(EDuckType type,
-                       String name,
-                       IFlyBehaviour iFlyBehaviour,
-                       IQuackBehaviour iQuackBehaviour) {
-        super(type, name, iFlyBehaviour, iQuackBehaviour);
+                       String name) {
+        super(type, name);
     }
 
     @Override

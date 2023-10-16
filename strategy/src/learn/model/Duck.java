@@ -15,13 +15,9 @@ public abstract class Duck {
     }
 
     public Duck(EDuckType type,
-                String name,
-                IFlyBehaviour iFlyBehaviour,
-                IQuackBehaviour iQuackBehaviour) {
+                String name) {
         this.type = type;
         this.name = name;
-        this.iFlyBehaviour = iFlyBehaviour;
-        this.iQuackBehaviour = iQuackBehaviour;
     }
 
     public EDuckType getType() {
@@ -30,6 +26,14 @@ public abstract class Duck {
 
     public String getName() {
         return name;
+    }
+
+    public void setiFlyBehaviour(IFlyBehaviour iFlyBehaviour) {
+        this.iFlyBehaviour = iFlyBehaviour;
+    }
+
+    public void setiQuackBehaviour(IQuackBehaviour iQuackBehaviour) {
+        this.iQuackBehaviour = iQuackBehaviour;
     }
 
     public void quack(Duck duck) {

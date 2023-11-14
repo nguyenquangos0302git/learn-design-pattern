@@ -1,4 +1,4 @@
-package example;
+package learn;
 
 public class Tea extends CaffeineBeverage {
 
